@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{stack_overflow}
+\url{http://tex.stackexchange.com/}.
+
+\bibitem{this}
+\url{https://www.sharelatex.com/project/553fd5615b7540575c138105}.
+
+\bibitem{wikibook_latex}
+Wikibooks/latex.
+\newblock \url{http://en.wikibooks.org/wiki/LaTeX}.
+
+\end{thebibliography}

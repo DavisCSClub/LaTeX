@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2014/dev)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Getting Started.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--to sort, need author or key in stack_overflow
+Warning--to sort, need author or key in wikibook_latex
+Warning--to sort, need author or key in this
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            505 strings with 4209 characters,
+and the built_in function-call counts, 477 in all, are:
+= -- 41
+> -- 3
+< -- 0
++ -- 3
+- -- 0
+* -- 17
+:= -- 54
+add.period$ -- 4
+call.type$ -- 3
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 21
+empty$ -- 70
+format.name$ -- 0
+if$ -- 117
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 13
+num.names$ -- 0
+pop$ -- 26
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 26
+stack$ -- 0
+substring$ -- 15
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 3
+while$ -- 0
+width$ -- 4
+write$ -- 19
+(There were 3 warnings)

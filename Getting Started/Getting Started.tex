@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{natbib}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage[fleqn]{amsmath}
+\usepackage{mathtools}
+\usepackage{indentfirst}
+
+%\parindent 0pt
+\parskip 2ex
+
+\newcommand{\bb}{\textbf}
+\newcommand{\mono}{\texttt}       
+\newcommand{\ol}{\overline}       
+\newcommand{\mb}{\mathbb}
+\newcommand{\bl}{\textbackslash}
+\newcommand{\latex}{\LaTeX\xspace}
+
+\title{ {\Large CS Club Presents:} \\ \textbf{Getting Started with \latex} }
+\author{Calvin Li}
+\date{April 2015}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section*{Why Latex ?}
+
+\begin{itemize}
+\item Looks pretty by default
+\item Easy and flexible way to do: 
+    \begin{itemize}
+    \item Graphs
+    \item Figures
+    \item Lists (like this one!)
+    \item Equations
+    \item Bibliographies
+    \end{itemize}
+\end{itemize}
+
+\section*{Installation}
+If you're using Linux, you can use the \texttt{pdflatex} command to compile a \texttt{.tex} file into a PDF. Otherwise, save yourself some headache and use an online editor like \textcolor{blue}{\url{sharelatex.com}}. Either way, setup should be trivial.
+
+\section*{The Tex file}
+Tex files are the "source code" of the document. It consists of two parts, the preamble and the body.
+
+\subsection*{Preamble}
+Think of this as the pre-processing code or header for the documents. This is where you can import packages, set document-wide parameters like font size or margin, and define custom commands. Most of it, like \texttt{usepackage} and \texttt{newcommand}, is pretty self-explanatory; if anything else needs to be put in the preamble, it'll tell you. Just start with a \texttt{documentclass} (e.g., \texttt{article}) and go from there.
+
+\subsection*{Body}
+
+\subsubsection*{Sectioning}
+The body is where the actual content of the document lies. Latex documents are organized into sections and subsections (and subsubsections). They tell Latex that pieces of text belong together, helping it put page break placement. 
+
+\subsubsection*{Paragraphs}
+Within sections, start a new paragraph by skipping a line. Insert an indent anywhere with \texttt{\bl indent}, and a line break using \texttt{\bl\bl}. Comment lines with \%. %(like this)
+Any keywords (commands, special symbols, etc) are preceded by a backslash (\texttt{\bl}).
+
+\subsubsection*{Math Mode}
+Math (equations) in Latex are put between a pair of \texttt{\bl(} and \texttt{\bl)}, so \texttt{\bl(X+Y=10\bl)} becomes \(X+Y=10\) rather than X+Y=10. Use \texttt{\bl(<math>\bl)} to inline math, and \texttt{\bl[ <math> \bl]} to put the math 
+\[in\; its\; own\; line.\]
+%There is a lot of space above and below the "equation" here, but that is because we aren't doing any actual math. It looks better if we add Sigmas and fractions. Of course, the amount of space can be adjusted, but it's usually not worth the effort.
+
+In math mode you can also use mathematical symbols, superscripts, subscripts, sigma notations, fractions, etc, basically anything you need to create formatted equations.
+
+\section*{Resources}
+At this point, you should understand the basic workings of Latex and have almost all the knowledge needed to write simple documents, like homework or lab reports. Inserting figures, graph, or lists can and should be looked up, as there are too many things to memorize. Get into the habit of Googling anything you don't know. Also, feel free to include lots of packages in your preamble; they generally will not slow down compilation.
+
+StackOverflow\cite{stack_overflow} and the Latex Wikibook\cite{wikibook_latex} are good sources for looking up how to do things. For simple examples, you can also look at the source\cite{this} for this guide, which has examples of lists, equations, and newcommands.
+
+Here are some links to examples. They should be enough to do anything basic:
+\begin{enumerate}
+\item \href{https://www.sharelatex.com/learn/Bold,_italics_and_underlining}{Formatting text}
+
+\item \href{http://en.wikibooks.org/wiki/LaTeX/Mathematics}{Equations}
+
+\item \href{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}{Figures}
+
+\item \href{http://en.wikibooks.org/wiki/LaTeX/List_Structures}{Lists}
+
+\item \href{http://en.wikibooks.org/wiki/LaTeX/Macros}{Macros (newcommands)}
+
+\item \href{http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management}{Bibliographies}
+
+\item \href{https://www.sharelatex.com/learn/Bibliography_management_with_bibtex}{BibTex (Advanced bibliography system)}
+\end{enumerate}
+
+\bibliography{references}{}
+\bibliographystyle{plain}
+
+\end{document}
+
