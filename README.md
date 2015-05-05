@@ -7,5 +7,4 @@ Compiling on Linux
 	run pdflatex, bibtex, pdflatex, pdflatex, in that order.
 
 # Cheat Sheet
----
 http://www.stdout.org/~winston/latex/latexsheet.pdf
